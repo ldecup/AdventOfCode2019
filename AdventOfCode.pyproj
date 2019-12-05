@@ -1,0 +1,63 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>45e9e9ee-6fa2-4c87-86e4-c1a099396f7b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Day3\Day3.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>AdventOfCode</Name>
+    <RootNamespace>AdventOfCode</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Day1\Day1.py" />
+    <Compile Include="Day2\Day2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day2\Day2_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day3\Day3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="intcomp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wiregrid.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Day1\InputDay1.txt" />
+    <Content Include="Day2\InputDay2.txt" />
+    <Content Include="Day3\InputDay3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Day1\" />
+    <Folder Include="Day2\" />
+    <Folder Include="Day3\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
