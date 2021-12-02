@@ -1,3 +1,4 @@
+#Status : Done
 import intcomp
 
 for i in range(0,99):

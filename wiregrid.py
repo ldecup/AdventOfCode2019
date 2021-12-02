@@ -1,7 +1,7 @@
 #This module handles wire grids (see day 3)
 
-orY = 5
-orX = 5
+orY = 10000
+orX = 10000
 
 #Initialize a grid
 def iniGrid(size):
@@ -34,7 +34,7 @@ def parseCom(input,grid):
 	x = orX
 	for i in range(len(commands)):
 		com = list(commands[i])[0]
-		val = int(list(commands[i])[1])
+		val = int(commands[i][1:])
 		if com == "U":
 			for a in range(y-val, y):
 				  grid = addChar(a,x,grid)

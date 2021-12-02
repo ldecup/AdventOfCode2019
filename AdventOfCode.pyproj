@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>45e9e9ee-6fa2-4c87-86e4-c1a099396f7b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Day3\Day3.py</StartupFile>
+    <StartupFile>Day2\Day2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>AdventOfCode</Name>
     <RootNamespace>AdventOfCode</RootNamespace>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,10 +32,34 @@
     <Compile Include="Day3\Day3.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Day4\Day4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day4\Day4_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day5\Day5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day6\Day6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day6\Day6_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day7\Day7.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day8\Day8.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="intcomp.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="tests.py">
+    <Compile Include="orbmap.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="zztests.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="wiregrid.py">
@@ -45,11 +70,21 @@
     <Content Include="Day1\InputDay1.txt" />
     <Content Include="Day2\InputDay2.txt" />
     <Content Include="Day3\InputDay3.txt" />
+    <Content Include="Day5\InputDay5.txt" />
+    <Content Include="Day5\InputDay5_Test.txt" />
+    <Content Include="Day6\InputDay6.txt" />
+    <Content Include="Day6\InputDay6_2.txt" />
+    <Content Include="Day8\InputDay8.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Day1\" />
     <Folder Include="Day2\" />
     <Folder Include="Day3\" />
+    <Folder Include="Day4\" />
+    <Folder Include="Day5\" />
+    <Folder Include="Day6\" />
+    <Folder Include="Day7\" />
+    <Folder Include="Day8\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

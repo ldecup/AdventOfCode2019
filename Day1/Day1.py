@@ -1,3 +1,4 @@
+#Status : Done
 import math
 
 input = "Day1\InputDay1.txt"
